@@ -9,13 +9,13 @@ const skills = [
   { value: "svelte", label: "Svelte" },
   { value: "angular", label: "Angular" },
   { value: "javascript", label: "JavaScript" },
-  { value: "nodejs", label: "Node.js" }
+  { value: "nodejs", label: "Node.js" },
 ];
 
 const initialState = {
   name: "",
   email: "",
-  password: ""
+  password: "",
 };
 
 const Register = () => {
@@ -30,7 +30,7 @@ const Register = () => {
     setState((prevState) => {
       return {
         ...prevState,
-        [name]: value
+        [name]: value,
       };
     });
   };
